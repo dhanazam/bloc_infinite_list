@@ -1,4 +1,6 @@
 import 'package:bloc_infinite_list/posts/bloc/post_bloc.dart';
+import 'package:bloc_infinite_list/posts/widgets/bottom_loader.dart';
+import 'package:bloc_infinite_list/posts/widgets/post_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
