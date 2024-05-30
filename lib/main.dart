@@ -1,20 +1,8 @@
+import 'package:bloc/bloc.dart';
+import 'package:bloc_infinite_list/simple_bloc_observer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  Bloc.observer = const SimpleBlocObserver();
+  runApp(const App());
 }
